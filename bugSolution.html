@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Correct way to clear the content
+    document.getElementById("myDiv").innerHTML = "";
+    //or
+    //Correct way to remove the element entirely
+    //const myDiv = document.getElementById("myDiv");
+    //myDiv.parentNode.removeChild(myDiv);
+  </script>
+</body>
+</html>
